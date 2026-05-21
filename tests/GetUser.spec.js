@@ -2,7 +2,7 @@ import {test,expect,request} from "@playwright/test";
 import {User} from "../API/user.api"
 import {getUserData} from "../DATA/GetUser.data";
 
-function checkExactBody(body, expectedBody){
+function checkExactBody(body, expectedBody){  //check utils folder
     const keys= Object.keys(expectedBody);
 
     for(let i=0;i<keys.length; i++){

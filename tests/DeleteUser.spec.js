@@ -13,7 +13,8 @@ test.describe("Delete the USer",()=>{
         userAPI=new User(context);
         
         //utils object
-        ResponseCheckOBJ=new ResponseCheck(expect);
+        ResponseCheckOBJ=new ResponseCheck(expect); //instead of putting on the function repeatedly access the utils folder
+        //as it is a class creating a object to access the functions
     })
 
     DeleteUser.forEach((data)=>{
